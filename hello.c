@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <ncurses.h>
+#include <stdlib.h>
 
 int main(){
 
@@ -10,6 +10,7 @@ int main(){
 		exit(1);
 	}
 
+	start_color();
 
 	init_pair(1, COLOR_RED, COLOR_BLACK);
 	init_pair(2, COLOR_GREEN, COLOR_BLACK);
@@ -64,7 +65,7 @@ int main(){
 
 	attron(COLOR_PAIR(4));
 	attron(A_STANDOUT | A_BOLD);
-	mvprintw(16, 55, " Albert Einstein");
+	mvprintw(16, 55, " Albert Einstein \n");
 	attroff(A_STANDOUT | A_BOLD);
 	attroff(COLOR_PAIR(4));
 
