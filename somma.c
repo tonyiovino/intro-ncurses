@@ -32,10 +32,8 @@ int main(){
 
 	attron(A_BOLD);
 	mvprintw(11, 33, "La somma: ");
-	refresh();
 	attron(A_STANDOUT);
 	printw(" %d ", somma);
-	refresh();
 	attroff(A_STANDOUT);
 	attroff(A_BOLD);
 	printw("\n");
